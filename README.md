@@ -2,9 +2,13 @@
 
 # Synopsis
 
-A common situation is the accumulation of many Azure subscriptions over time. If these subs were made to meet business needs, and according to well-defined deployment doctrine, this isn't a problem. Often however, the subs were created in a disorganized way, by multiple teams, for different lines of business and departments without a central, organizing principle.
+A common situation is the accumulation of many Azure subscriptions over time. If these subs were made to meet business needs, and according to well-defined deployment doctrine, this isn't a problem. 
 
-In these cases, you need to gather information about the subscriptions. The key questions to be answered are: 
+Often however, the subs are created in a disorganized way, by multiple teams, for different lines of business and departments without a central, organizing principle, leading to confusion.
+
+In these cases, you need to gather information about the overall subscription situation. 
+
+The key questions to be answered are: 
 
 # One.) How many subs 
 
