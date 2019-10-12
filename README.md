@@ -32,7 +32,7 @@ To list all subscriptions:
 
 Get-AzureRmSubscription 
 
-# We want to pipe the subscription IDs into a CSV file for later use when we pipe all the subs into a management group for example:
+# We want to pipe the subscription IDs into a CSV file for later use when we add the subs to a management group. For example:
 
 Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
 
