@@ -6,11 +6,11 @@ A common situation is the accumulation of many Azure subscriptions over time. If
 
 In these cases, you need to gather information about the subscriptions. The key questions to be answered are: 
 
-One.) How many subs 
+# One.) How many subs 
 
-Two.) What's in them
+# Two.) What's in them
 
-Three.) How much it's all costing
+# Three.) How much it's all costing
 
 I think that one of the best methods is by using Azure Cost Management as a data collection and reporting tool.
 
