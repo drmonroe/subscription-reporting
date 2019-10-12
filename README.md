@@ -2,7 +2,9 @@
 
 # Synopsis
 
-A common situation is the accumulation of many Azure subscriptions over time. If these subs were made to meet business needs, and according to well-defined deployment doctrine, this isn't a problem. 
+A common situation is the accumulation of many Azure subscriptions over time. 
+
+If these subs were made to meet business needs, and according to well-defined deployment doctrine, this isn't a problem. 
 
 Often however, the subs are created in a disorganized way, by multiple teams, for different lines of business and departments without a central, organizing principle, leading to confusion.
 
@@ -19,7 +21,6 @@ The key questions to be answered are:
 One of the best methods for accomplishing this is by using *Azure Cost Management* as a data collection and reporting tool.
 
 
-This repo will be used to collect information about Azure subscription reporting (using the billing API)
 
 The technique:
 
