@@ -27,7 +27,8 @@ The technique will be:
 #
 
 # Details
-# To list all subscriptions:
+
+To list all subscriptions:
 
 Get-AzureRmSubscription 
 
