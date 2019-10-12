@@ -3,11 +3,11 @@
 This repo will be used to collect information about Azure subscription reporting (using the billing API)
 The technique will be:
 
-1.) Collect a listing of all subscriptions using PowerShell
+# 1.) Collect a listing of all subscriptions using PowerShell
 
-2.) Add all subscriptions to a management group (no policies - the management group is used for billing data collection purposes)
+# 2.) Add all subscriptions to a management group (no policies - the management group is used for billing data collection purposes)
 
-3.) Export a master report using either PowerShell or the Azure portal from the Cost Management interface
+# 3.) Export a master report using either PowerShell or the Azure portal from the Cost Management interface
 
 #
 
