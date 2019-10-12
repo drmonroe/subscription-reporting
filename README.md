@@ -10,7 +10,7 @@ In these cases, you need to gather information about the subscriptions. The key 
 
 # Two.) What's in them
 
-# Three.) How much it's all costing
+# Three.) How much it costs
 
 I think that one of the best methods is by using Azure Cost Management as a data collection and reporting tool.
 
