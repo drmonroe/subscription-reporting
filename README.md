@@ -13,7 +13,7 @@ The technique will be:
 
 Get-AzureRmSubscription 
 
-# We want to pipe the subscription IDs into a CSV file for lateer use when we pipe all the subs into a management group for example:
+# We want to pipe the subscription IDs into a CSV file for later use when we pipe all the subs into a management group for example:
 
 Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
 
