@@ -16,7 +16,8 @@ I think that one of the best methods is by using Azure Cost Management as a data
 
 
 This repo will be used to collect information about Azure subscription reporting (using the billing API)
-The technique will be:
+
+The technique:
 
 # 1.) Collect a listing of all subscriptions using PowerShell
 
