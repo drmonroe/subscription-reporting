@@ -16,7 +16,7 @@ The key questions to be answered are:
 
 # Three.) How much it costs
 
-I think that one of the best methods is by using Azure Cost Management as a data collection and reporting tool.
+One of the best methods for accomplishing this is by using *Azure Cost Management* as a data collection and reporting tool.
 
 
 This repo will be used to collect information about Azure subscription reporting (using the billing API)
