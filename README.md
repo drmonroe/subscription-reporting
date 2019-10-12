@@ -16,7 +16,7 @@ The key questions to be answered are:
 
 # Two.) What's in them
 
-# Three.) How much it costs
+# Three.) How much does it cost?
 
 One of the best methods for accomplishing this is by using *Azure Cost Management* as a data collection and reporting tool.
 
@@ -40,7 +40,7 @@ Get-AzureRmSubscription
 
 # We want to pipe the subscription IDs into a CSV file for later use when we add the subs to a management group. For example:
 
-Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
+#*Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
 
 # This PowerShell cmdlet is used to create a management group
 
