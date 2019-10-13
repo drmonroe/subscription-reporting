@@ -50,6 +50,8 @@ Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscription
 
 cd $HOME\clouddrive
 
+![Azure Cloud Shell](https://mlabshare.blob.core.windows.net/malbshare/CloudShell.png)
+
 ### your outputted CSV can be written to an Azure Blob for use
 
 
@@ -85,7 +87,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 ![Cost Analysis Costs by Resource View](https://mlabshare.blob.core.windows.net/malbshare/AzureChangeView-2.png)
 
 
-### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface or, export as a file for ingestion by your preferred analysis tooling:
+### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface as a ready-made business intelligence tool or, export as a file for ingestion by your preferred analysis tooling:
 
 
 ![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureCostsbyResource.png)
@@ -111,7 +113,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 * PreTaxCost	
 * Currency
 
-### Depending upon the size of the output (if, for example, you have hundreds of subscriptions and maybe thousands of deployed artifacts that make working with a spreadsheet difficult) you may want to import the data to PowerBI (or your preferred data analytics tool) for further insight and report creation (screenshot from PowerBI data selection):
+### Depending on the size of the output (if, for example, you have hundreds of subscriptions and maybe thousands of deployed artifacts that make working with a spreadsheet difficult) you may want to import the data to PowerBI (or your preferred data analytics tool) for further insight and report creation (screenshot from PowerBI data selection):
 
 ![PowerBI Input](https://mlabshare.blob.core.windows.net/malbshare/PowerBI.png)
 
