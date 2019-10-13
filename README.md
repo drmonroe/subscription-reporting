@@ -75,14 +75,14 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 # Using the Azure Cost Management Analysis Interface
 
-### The PowerShell error still has be sorted and suggestions for tightening the script logic are welcome.  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal --> Cost Management --> Cost Analysis):
+### The PowerShell error still has be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal --> Cost Management --> Cost Analysis):
 
 ![Cost Analysis Accumulated View](https://mlabshare.blob.core.windows.net/malbshare/AzureCostAnalysisBillingGroupScope.png)
 
 
 ### The default view is *Accumulated Costs* which, although useful for cost control purposes, isn't the view we need for subscription reporting.  For reporting, let's switch to the *Costs by Resources* view:
 
-![Cost Analysis Costs by Resource View](https://mlabshare.blob.core.windows.net/malbshare/AzureChangeView.png)
+![Cost Analysis Costs by Resource View](https://mlabshare.blob.core.windows.net/malbshare/AzureChangeView-2.png)
 
 
 ### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface or, export as a file for ingestion by your preferred analysis tooling:
@@ -90,6 +90,9 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 ![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureCostsbyResource.png)
 
+### With all of the subscription data accessible via a management group and cost analysis, you can export a detailed listing for analysis:
+
+![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureExport.png)
 
 
 
