@@ -1,4 +1,4 @@
-# Azure subscription-reporting
+# Azure subscription-reporting: A Work in Progress
 
 
 ### Synopsis
@@ -31,26 +31,65 @@ One of the best methods for accomplishing this is by using *Azure Cost Managemen
 
 ### 3.) Export a master report using either PowerShell or the Azure portal from the Cost Management interface
 
-### 4.) Use this exported data to produce reports (for example, using your computer and Excel or with PowerBI or other Azure analytics tooling)
+### 4.) Use this exported data to produce reports (for example, using Excel on your computer or, even better, with PowerBI or another Azure analytics tooling)
 
 #
 
 # Details
 
-To list all subscriptions:
+### To list all subscriptions:
 
 Get-AzureRmSubscription 
 
-# We want to pipe the subscription IDs into a CSV file for later use when we add the subs to a management group. For example:
+### We want to pipe the subscription IDs into a CSV file for later use when we add the subs to a management group. For example:
 
 Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
 
-# This PowerShell cmdlet is used to create a management group
+### Note that this can be run using the Azure Cloud Shell, outputting the CSV file to your cloud drive.
+### For example, by changing your directory to your cloud shell drive:
+
+cd $HOME\clouddrive
+
+### your outputted CSV can be written to an Azure Blob for use
+
+
+### This PowerShell cmdlet is used to create a management group
 
 New-AzManagementGroup -GroupName 'YourManagementGroupName' -DisplayName 'YourManagementGroup'
 
-# For example:
+### For example:
 
 New-AzManagementGroup -GroupName "BillingReporting" -DisplayName "BillingReportingGroup"
 
-# 
+### Ideally, you should be able to use the Subscription IDs you gathered in the previous step and pipe those values into the cmdlet which adds subscriptions to a Management Group.  For example, here's the cmdlet to add a single sub to a management group:
+
+New-AzManagementGroupSubscription -GroupName 'YourManagementGroupName' -SubscriptionId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+### Obviously, if you have hundreds of subscriptions to consider, you don't want to manually run the cmdlet against each, one by one.  We can try to apply the cmdlet against a CSV listing of sub IDs.  Here's one attempt:
+
+GC subscriptionID.csv | % {New-AzManagementGroupSubscription -GroupName BillingReporting -SubscriptionId $_}
+
+### This loop doesn't work, producing the following error:
+
+New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cannot convert value ""123456-1a23-56ab-99ed-vb2345567"" to type "System.Guid". Error: "Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)."
+
+# Using the Azure Cost Management Analysis Interface
+
+### The PowerShell error still has be sorted and suggestions for tightening the script logic are welcome.  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal --> Cost Management --> Cost Analysis):
+
+![Cost Analysis Accumulated View](https://mlabshare.blob.core.windows.net/malbshare/AzureCostAnalysisBillingGroupScope.png)
+
+
+### The default view is *Accumulated Costs* which, although useful for cost control purposes, isn't the view we need for subscription reporting.  For reporting, let's switch to the *Costs by Resources* view:
+
+![Cost Analysis Costs by Resource View](https://mlabshare.blob.core.windows.net/malbshare/AzureChangeView.png)
+
+
+### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface or, export as a file for ingestion by your preferred analysis tooling:
+
+
+![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureCostsbyResource.png)
+
+
+
+
