@@ -92,7 +92,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 ### With all of the subscription data accessible via a management group and cost analysis, you can export a detailed listing for analysis:
 
-![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureExport.png)
+![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureExport-2.png)
 
 
 
