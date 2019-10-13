@@ -1,6 +1,6 @@
 # Azure subscription-reporting
 
-# Synopsis
+### Synopsis
 
 A common situation is the accumulation of many Azure subscriptions over time. 
 
