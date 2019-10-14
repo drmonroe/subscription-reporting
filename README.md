@@ -27,11 +27,11 @@ One of the best methods for accomplishing this is by using *Azure Cost Managemen
 
 ### 1.) Collect a listing of all subscriptions using PowerShell
 
-### 2.) Add all subscriptions to a management group. No policies should be applied to this group since its purpose is to serve as an organizing container for the Cost Management tool
+### 2.) Add all subscriptions to a management group. No policies should be applied to this group since its purpose is to serve as an organizing container for the Cost Management tool's data collection
 
 ### 3.) Export a master report using either PowerShell or the Azure portal from the Cost Management interface
 
-### 4.) Use this exported data to produce reports (for example, using Excel on your computer or, even better, with PowerBI or another Azure analytics tooling)
+### 4.) Use this exported data to produce reports (for example, using Excel on your computer or, even better, with PowerBI or another Azure or non-Azure analytics tooling)
 
 #
 
@@ -77,7 +77,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 # Using the Azure Cost Management Analysis Interface
 
-### The PowerShell error still has be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal --> Cost Management --> Cost Analysis):
+### The PowerShell error still has to be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal main page --> Cost Management --> Cost Analysis):
 
 ![Cost Analysis Accumulated View](https://mlabshare.blob.core.windows.net/malbshare/AzureCostAnalysisBillingGroupScope.png)
 
@@ -120,6 +120,12 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 PowerBI: https://app.powerbi.com
 
 
+# Azure Cost Management for Busy People
 
+### If you're interested in learning more about Azure Cost Management and what it can do for your organization, check out my Kindle book, "Azure Cost Management for Busy People" -
+
+https://amzn.to/2OOkhts
+
+Thanks!
 
 
