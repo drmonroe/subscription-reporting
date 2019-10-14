@@ -19,7 +19,7 @@ The key questions to be answered are:
 
 ### Three.) How much does it all cost?
 
-One of the best methods for accomplishing this is by using *Azure Cost Management* as a data collection and reporting tool.
+One of the best methods for these questions is by using *Azure Cost Management* as a data collection and reporting tool.
 
 
 
