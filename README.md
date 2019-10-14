@@ -57,7 +57,7 @@ If you're unfamiliar with Azure Cloud Shell, check out this overview:
 https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 
 
-### Using Cloud Shell, your outputted CSV can be directly written to an Azure Blob (hosting your clouddrive) for use
+### Using Cloud Shell, your outputted CSV can be directly written to an Azure Blob (hosting your clouddrive) for use.
 
 
 ### This PowerShell cmdlet is used to create a management group
@@ -92,7 +92,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 ![Cost Analysis Costs by Resource View](https://mlabshare.blob.core.windows.net/malbshare/AzureChangeView-2.png)
 
 
-### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface as a ready-made business intelligence tool or, export as a file for ingestion by your preferred analysis tooling:
+### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface as a ready-made business intelligence tool or, (also) export the results as a file for ingestion by your preferred analysis tooling:
 
 
 ![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureCostsbyResource.png)
