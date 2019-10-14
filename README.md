@@ -52,7 +52,12 @@ cd $HOME\clouddrive
 
 ![Azure Cloud Shell](https://mlabshare.blob.core.windows.net/malbshare/CloudShell.png)
 
-### your outputted CSV can be written to an Azure Blob for use
+If you're unfamiliar with Azure Cloud Shell, check out this overview:
+
+https://docs.microsoft.com/en-us/azure/cloud-shell/overview
+
+
+### Using Cloud Shell, your outputted CSV can be directly written to an Azure Blob (hosting your clouddrive) for use
 
 
 ### This PowerShell cmdlet is used to create a management group
