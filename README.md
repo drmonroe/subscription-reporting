@@ -77,7 +77,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 # Using the Azure Cost Management Analysis Interface
 
-### The PowerShell error still has to be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal main page --> Cost Management --> Cost Analysis):
+### The PowerShell error still has to be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal main page --> Cost Management --> Cost Analysis). Note the *scope* which is the BillingGroup management group I created earlier:
 
 ![Cost Analysis Accumulated View](https://mlabshare.blob.core.windows.net/malbshare/AzureCostAnalysisBillingGroupScope.png)
 
