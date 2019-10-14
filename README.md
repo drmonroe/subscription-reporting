@@ -5,7 +5,7 @@
 
 A common situation is the accumulation of many Azure subscriptions over time. 
 
-This isn't necessarily a problem if these subs were made following a well-defined doctrine to meet clearly understood business and customer needs and proper tracking and tagging methods were consistently used.
+This isn't necessarily a problem if these subs were made following a well-defined doctrine (for example, the Azure Cloud Adoption Framework - https://bit.ly/2OJNVzU) to meet clearly understood business and customer needs and proper tracking and tagging methods were consistently used.
 
 Often however, the subs are created in a disorganized way, by multiple teams, for different lines of business and departments without a central, organizing principle, leading to confusion.
 
