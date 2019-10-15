@@ -41,9 +41,11 @@ One of the best methods for answering these questions is by using *Azure Cost Ma
 
 Get-AzureRmSubscription 
 
-### We want to pipe the subscription IDs into a CSV file for later use when we add the subs to a management group. For example:
+### We want to pipe the subscription IDs into a CSV or TXT file for later use when we add the subs to a management group. For example:
 
-Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
+CSV File: Get-AzureRmSubscription | select-object SubscriptionId | export-csv subscriptionID.csv
+
+TXT File: Get-AzureRmSubscription | select-object SubscriptionId | Out-File subscriptionID-text.txt
 
 ### Note that this can be run using the Azure Cloud Shell, outputting the CSV file to your cloud drive.
 ### For example, by changing your directory to your cloud shell drive:
