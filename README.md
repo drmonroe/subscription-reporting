@@ -57,7 +57,11 @@ If you're unfamiliar with Azure Cloud Shell, check out this overview:
 https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 
 
-### Using Cloud Shell, your outputted CSV can be directly written to an Azure Blob (hosting your clouddrive) for use.
+### Using Cloud Shell, your outputted CSV can be directly written to an Azure File Share (hosting your clouddrive) for use.
+
+You can learn more about Azure File Shares here: 
+
+https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share
 
 
 ### This PowerShell cmdlet is used to create a management group
