@@ -59,7 +59,7 @@ If you're unfamiliar with Azure Cloud Shell, check out this overview:
 https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 
 
-### Using Cloud Shell, your outputted CSV can be directly written to an Azure File Share (hosting your clouddrive) for use.
+### Using Cloud Shell, your outputted CSV or TXT can be directly written to an Azure File Share (hosting your clouddrive) for use.
 
 You can learn more about Azure File Shares here: 
 
