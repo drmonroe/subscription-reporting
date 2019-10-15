@@ -47,7 +47,7 @@ CSV File: Get-AzureRmSubscription | select-object SubscriptionId | export-csv su
 
 TXT File: Get-AzureRmSubscription | select-object SubscriptionId | Out-File subscriptionID-text.txt
 
-### Note that this can be run using the Azure Cloud Shell, outputting the CSV file to your cloud drive.
+### Note that this can be run using the Azure Cloud Shell, outputting the CSV or TXT file to your cloud drive.
 ### For example, by changing your directory to your cloud shell drive:
 
 cd $HOME\clouddrive
