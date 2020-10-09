@@ -52,7 +52,7 @@ TXT File: Get-AzureRmSubscription | select-object SubscriptionId | Out-File subs
 
 cd $HOME\clouddrive
 
-![Azure Cloud Shell](https://mlabshare.blob.core.windows.net/malbshare/CloudShell.png)
+![Azure Cloud Shell](https://mlabstoragewest.blob.core.windows.net/mlabstorcontainerwest/cloudshell.png)
 
 If you're unfamiliar with Azure Cloud Shell, check out this overview:
 
