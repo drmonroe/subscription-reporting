@@ -88,20 +88,20 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 # Using the Azure Cost Management Analysis Interface
 
-### The PowerShell error still has to be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal main page --> Cost Management --> Cost Analysis). Note the *scope* which is the *BillingReportingGroup* management group I created earlier:
+### The PowerShell error still has to be sorted and suggestions for tightening the script logic are welcome (I'm continuing to try ideas).  In the meantime, let's assume you've piped all of your subscriptions into the management group. The next step is to view aggregated subscription data via the Azure Cost Management, Cost Analysis interface (Azure Portal main page --> Cost Management --> Cost Analysis). Note the *scope* which is the *General Resources* management group:
 
-![Cost Analysis Accumulated View](https://mlabshare.blob.core.windows.net/malbshare/AzureCostAnalysisBillingGroupScope.png)
+![Cost Analysis Accumulated View](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-Management-Accumulated-View.png)
 
 
 ### The default view is *Accumulated Costs* which, although useful for cost control purposes, isn't the view we need for subscription reporting.  For reporting, let's switch to the *Costs by Resources* view:
 
-![Cost Analysis Costs by Resource View](https://mlabshare.blob.core.windows.net/malbshare/AzureChangeView-2.png)
+![Cost Analysis Costs by Resource View](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-by-Resources-View.png)
 
 
 ### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface as a ready-made business intelligence tool or, (also) export the results as a file for ingestion by your preferred analysis tooling:
 
 
-![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureCostsbyResource.png)
+![Cost Analysis Costs by Resource View Choose Export](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-by-Resources-View.png)
 
 ### With all of the subscription data accessible via a management group and cost analysis, you can export a detailed listing for analysis:
 
