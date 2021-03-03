@@ -121,7 +121,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 ### Depending on the size of the output (if, for example, you have hundreds of subscriptions and maybe thousands of deployed artifacts that make working with a spreadsheet difficult) you may want to import the data to PowerBI (or your preferred data analytics tool) for further insight and report creation (screenshot from PowerBI data selection):
 
-![PowerBI Input](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-Export.png)
+![PowerBI Input](https://acmpstor.blob.core.windows.net/acmpblob1/PowerBI-Screenshot.png)
 
 PowerBI: https://app.powerbi.com
 
