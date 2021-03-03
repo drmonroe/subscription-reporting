@@ -98,18 +98,13 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 ![Cost Analysis Costs by Resource View](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-by-Resources-View.png)
 
 
-### The *Costs by Resource* view provides a detailed report of all the artifacts contained within the subscriptions that are part of the management group. You can use this via the Cost Analysis interface as a ready-made business intelligence tool or, (also) export the results as a file for ingestion by your preferred analysis tooling:
-
-
-![Cost Analysis Costs by Resource View Choose Export](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-by-Resources-View.png)
-
 ### With all of the subscription data accessible via a management group and cost analysis, you can export a detailed listing for analysis:
 
-![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/AzureExport-2.png)
+![Cost Analysis Costs by Resource View Choose Export](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-Management-Export.png)
 
 ### Here's an example of an exported Excel spreadsheet:
 
-![Cost Analysis Costs by Resource View Choose Export](https://mlabshare.blob.core.windows.net/malbshare/ExcelOutput.png)
+![Cost Analysis Costs by Resource View Choose Export](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-Export.png)
 
 ### The results can be parsed using any of the included columns which are:
 
@@ -126,7 +121,7 @@ New-AzManagementGroupSubscription : Cannot bind parameter 'SubscriptionId'. Cann
 
 ### Depending on the size of the output (if, for example, you have hundreds of subscriptions and maybe thousands of deployed artifacts that make working with a spreadsheet difficult) you may want to import the data to PowerBI (or your preferred data analytics tool) for further insight and report creation (screenshot from PowerBI data selection):
 
-![PowerBI Input](https://mlabshare.blob.core.windows.net/malbshare/PowerBI.png)
+![PowerBI Input](https://acmpstor.blob.core.windows.net/acmpblob1/Azure-Cost-Export.png)
 
 PowerBI: https://app.powerbi.com
 
